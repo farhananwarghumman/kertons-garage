@@ -104,7 +104,7 @@ export default function Reviews() {
           className="text-center"
         >
           <a
-            href="https://www.google.com/maps/search/?api=1&query=Kertons+Garage+Clonmel"
+            href={process.env.NEXT_PUBLIC_GOOGLE_REVIEWS_URL || "https://www.google.com/maps/search/?api=1&query=Kertons+Garage+Clonmel"}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105 shadow-lg"

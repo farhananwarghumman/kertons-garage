@@ -75,7 +75,7 @@ export default function Footer() {
             </div>
             <div className="mt-6">
               <a
-                href="https://www.google.com/search?sca_esv=608d6234066b0d5b&sxsrf=ANbL-n5L88hXbCMEpwF2a8QqOkrBBkOQfw:1773660609351&q=Kertons+garage+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2NjE2NDQxMTMwMbQwMzYwMLMw2MDI-IpRzDu1qCQ_r1ghPbEoMT1VISi1LDO1vHgRKw4JAMmfthlMAAAA&rldimm=3431144604186300680&tbm=lcl&hl=en-IE&sa=X&ved=2ahUKEwjk8MnUqKSTAxUbVUEAHbtlIHgQ9fQKegQIKxAG&biw=1920&bih=911&dpr=1#lkt=LocalPoiReviews"
+                href={process.env.NEXT_PUBLIC_GOOGLE_REVIEWS_URL || "https://www.google.com/maps/search/?api=1&query=Kertons+Garage+Clonmel"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block bg-white text-secondary-900 px-6 py-2 rounded-lg font-medium hover:bg-secondary-100 transition-colors"
