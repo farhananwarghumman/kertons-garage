@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { Star, Quote } from 'lucide-react';
-import { useState } from 'react';
 
 const reviews = [
   {
@@ -44,12 +43,9 @@ const reviews = [
 ];
 
 export default function Reviews() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
   return (
     <section id="reviews" className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -71,7 +67,6 @@ export default function Reviews() {
           </p>
         </motion.div>
 
-        {/* Reviews grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {reviews.map((review, index) => (
             <motion.div
@@ -88,7 +83,9 @@ export default function Reviews() {
                   <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                 ))}
               </div>
-              <p className="text-secondary-700 mb-4 italic">"{review.text}"</p>
+              <p className="text-secondary-700 mb-4 italic">
+                &quot;{review.text}&quot;
+              </p>
               <div className="flex items-center justify-between">
                 <div>
                   <p className="font-bold text-secondary-900">{review.name}</p>
@@ -99,7 +96,6 @@ export default function Reviews() {
           ))}
         </div>
 
-        {/* CTA to Google Reviews */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
