@@ -104,7 +104,7 @@ export default function Reviews() {
           className="text-center"
         >
           <a
-            href="https://www.google.com/search?sca_esv=608d6234066b0d5b&sxsrf=ANbL-n5L88hXbCMEpwF2a8QqOkrBBkOQfw:1773660609351&q=Kertons+garage+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2NjE2NDQxMTMwMbQwMzYwMLMw2MDI-IpRzDu1qCQ_r1ghPbEoMT1VISi1LDO1vHgRKw4JAMmfthlMAAAA&rldimm=3431144604186300680&tbm=lcl&hl=en-IE&sa=X&ved=2ahUKEwjk8MnUqKSTAxUbVUEAHbtlIHgQ9fQKegQIKxAG&biw=1920&bih=911&dpr=1#lkt=LocalPoiReviews"
+            href="https://www.google.com/maps/search/?api=1&query=Kertons+Garage+Clonmel"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white border-2 border-primary-600 text-primary-600 hover:bg-primary-600 hover:text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105 shadow-lg"

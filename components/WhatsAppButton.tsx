@@ -30,19 +30,6 @@ export default function WhatsAppButton() {
         Chat Now!
       </motion.span>
 
-      {/* Pulsing ring animation */}
-      <motion.span
-        className="absolute inset-0 rounded-full bg-green-500"
-        animate={{
-          scale: [1, 1.5, 1.5],
-          opacity: [0.7, 0, 0],
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          ease: 'easeOut',
-        }}
-      />
     </motion.a>
   );
 }
