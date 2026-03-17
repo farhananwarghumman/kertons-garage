@@ -344,7 +344,7 @@ const reviews = [
 ```typescript
 <div className="space-y-4 text-secondary-700 text-lg">
   <p>
-    With over 15 years of experience... {/* ← Edit your story */}
+    With over 30 years of experience... {/* ← Edit your story */}
   </p>
   <p>
     We take pride in providing... {/* ← Edit values */}

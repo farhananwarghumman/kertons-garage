@@ -74,7 +74,7 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-secondary-700 text-lg">
               <p>
-                With over 15 years of experience in the automotive industry, Kerton Garage has been the
+                With over 30 years of experience in the automotive industry, Kerton Garage has been the
                 trusted choice for vehicle repair and maintenance in our community.
               </p>
               <p>
