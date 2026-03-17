@@ -13,12 +13,12 @@ const features = [
   {
     icon: Shield,
     title: 'Quality Guarantee',
-    description: '12-month warranty on all repairs and parts'
+    description: '12-month warranty on all new parts repairs'
   },
   {
     icon: Clock,
     title: 'Fast Service',
-    description: 'Same-day service available for most repairs'
+    description: 'Same-day service available for most maintenance repairs'
   },
   {
     icon: Users,
