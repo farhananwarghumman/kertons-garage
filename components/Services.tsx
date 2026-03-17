@@ -18,13 +18,13 @@ const services = [
     icon: Wrench,
     title: 'Engine Repair',
     description: 'Complete engine diagnostics and repairs for all makes and models.',
-    features: ['Diagnostics', 'Tune-ups', 'Overhauls']
+    features: ['Diagnostics', 'Engine servicing', 'Overhauls']
   },
   {
     icon: CircleSlash,
     title: 'Brake Service',
     description: 'Professional brake inspection, repair, and replacement services.',
-    features: ['Brake pads', 'Rotors', 'Fluid flush']
+    features: ['Brake pads', 'Brake discs', 'Fluid flush']
   },
   {
     icon: Droplet,
@@ -91,9 +91,9 @@ export default function Services() {
             return (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -5 }}
                 className="bg-secondary-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 border border-secondary-100"
@@ -132,7 +132,7 @@ export default function Services() {
             href="#contact"
             className="inline-block bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105 shadow-lg"
           >
-            Get a Free Quote
+            Book a Service
           </a>
         </motion.div>
       </div>

@@ -378,7 +378,7 @@ const features = [
 
 ```typescript
 {[
-  { number: '15+', label: 'Years Experience' }, // ← Edit
+  { number: '30+', label: 'Years Experience' }, // ← Edit
   { number: '1000+', label: 'Happy Customers' }, // ← Edit
   { number: '5000+', label: 'Repairs Done' }, // ← Edit
   { number: '4.9/5', label: 'Google Rating' }, // ← Edit

@@ -2,8 +2,10 @@
 
 import { motion } from 'framer-motion';
 import { MessageCircle, Phone, MapPin, Clock, Mail } from 'lucide-react';
+import { useState } from 'react';
 
 export default function Contact() {
+  const [mapLoaded, setMapLoaded] = useState(false);
   const phoneNumber = '353876413038';
   const whatsappMessage = encodeURIComponent('Hi Kertons Garage, I would like to schedule a service.');
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${whatsappMessage}`;
@@ -13,9 +15,9 @@ export default function Contact() {
       <div className="container mx-auto px-4">
         {/* Section header */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
@@ -30,9 +32,9 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact info */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
             viewport={{ once: true }}
             className="space-y-6"
           >
@@ -73,8 +75,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-bold text-secondary-900 mb-1">Email</h3>
-                  <a href="mailto:info@kertonsgarage.ie" className="text-secondary-700 hover:text-primary-600 transition-colors">
-                    info@kertonsgarage.ie
+                  <a href="mailto:kertonsgarage@gmail.com" className="text-secondary-700 hover:text-primary-600 transition-colors">
+                    kertonsgarage@gmail.com
                   </a>
                 </div>
               </div>
@@ -87,7 +89,8 @@ export default function Contact() {
                   <h3 className="font-bold text-secondary-900 mb-1">Location</h3>
                   <p className="text-secondary-700">
                     Abbey Farm, Inishlounaght<br />
-                    Clonmel, Co. Tipperary, Ireland
+                    Clonmel, Co. Tipperary, Ireland<br />
+                    E91 Y0C2
                   </p>
                 </div>
               </div>
@@ -100,7 +103,7 @@ export default function Contact() {
                   <h3 className="font-bold text-secondary-900 mb-1">Business Hours</h3>
                   <div className="text-secondary-700 space-y-1">
                     <p><span className="font-medium">Mon - Fri:</span> 8:30 AM - 6:00 PM</p>
-                    <p><span className="font-medium">Saturday:</span> 9:00 AM - 4:00 PM</p>
+                    <p><span className="font-medium">Saturday:</span> 9:00 AM - 3:00 PM</p>
                     <p><span className="font-medium">Sunday:</span> Closed</p>
                   </div>
                 </div>
@@ -119,26 +122,36 @@ export default function Contact() {
 
           {/* Map */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
             viewport={{ once: true }}
             className="h-full min-h-[600px]"
           >
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden h-full relative">
+              {/* Placeholder while loading */}
+              {!mapLoaded && (
+                <div className="absolute inset-0 bg-secondary-100 flex items-center justify-center z-10">
+                  <div className="text-center">
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-3"></div>
+                    <p className="text-secondary-700">Loading map...</p>
+                  </div>
+                </div>
+              )}
               {/* Google Maps Embed with specific search for Kertons garage */}
               <iframe
                 src="https://maps.google.com/maps?q=Kertons+garage,+Abbey+Farm,+Inishlounaght,+Clonmel,+Co.+Tipperary,+Ireland&t=&z=16&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
-                style={{ border: 0 }}
+                style={{ border: 0, display: mapLoaded ? 'block' : 'none' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Kertons Garage - Abbey Farm, Inishlounaght, Clonmel, Ireland"
+                title="Kertons Garage - Abbey Farm, Inishlounaght, Clonmel, Ireland E91 Y0C2"
+                onLoad={() => setMapLoaded(true)}
               />
               {/* Additional link for exact directions */}
-              <div className="absolute bottom-4 right-4">
+              <div className="absolute bottom-4 right-4 z-20">
                 <a
                   href="https://maps.app.goo.gl/sGWzkoetXmg6JsCE6"
                   target="_blank"

@@ -34,9 +34,9 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left column - Image placeholder */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
             viewport={{ once: true }}
             className="relative"
           >
@@ -52,7 +52,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
               {/* Text overlay */}
               <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
-                <h3 className="text-3xl font-bold mb-2 drop-shadow-lg">15+ Years</h3>
+                <h3 className="text-3xl font-bold mb-2 drop-shadow-lg">30+ Years</h3>
                 <p className="text-xl drop-shadow-lg">of Expert Service</p>
                 <p className="text-sm mt-3 opacity-90 drop-shadow-lg">Professional automotive repair you can trust</p>
               </div>
@@ -64,9 +64,9 @@ export default function About() {
 
           {/* Right column - Content */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-secondary-900 mb-6">
@@ -95,9 +95,9 @@ export default function About() {
                 return (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 0.3 }}
                     viewport={{ once: true }}
                     className="flex gap-4"
                   >

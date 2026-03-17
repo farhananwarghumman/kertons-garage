@@ -17,9 +17,9 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
             className="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full mb-6"
           >
             <Star className="w-4 h-4 fill-current" />
@@ -28,9 +28,9 @@ export default function Hero() {
 
           {/* Main heading */}
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
             className="text-5xl md:text-6xl lg:text-7xl font-bold text-secondary-900 mb-6"
           >
             Expert Auto Repair
@@ -39,20 +39,20 @@ export default function Hero() {
 
           {/* Subtitle */}
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
             className="text-xl md:text-2xl text-secondary-600 mb-10 max-w-2xl mx-auto"
           >
-            Professional automotive service with 15+ years of experience.
+            Professional automotive service with 30+ years of experience.
             Get a quick quote on WhatsApp in minutes!
           </motion.p>
 
           {/* CTA Buttons */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <a
@@ -77,11 +77,11 @@ export default function Hero() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.3 }}
             className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8"
           >
             {[
-              { number: '15+', label: 'Years Experience' },
+              { number: '30+', label: 'Years Experience' },
               { number: '1000+', label: 'Happy Customers' },
               { number: '5000+', label: 'Repairs Done' },
               { number: '4.9/5', label: 'Google Rating' },

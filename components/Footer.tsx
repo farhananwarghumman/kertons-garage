@@ -17,7 +17,7 @@ export default function Footer() {
                 <MapPin className="w-5 h-5 text-primary-400 flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-secondary-200">Abbey Farm, Inishlounaght</p>
-                  <p className="text-secondary-200">Clonmel, Co. Tipperary, Ireland</p>
+                  <p className="text-secondary-200">Clonmel, Co. Tipperary, Ireland E91 Y0C2</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -28,8 +28,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary-400 flex-shrink-0" />
-                <a href="mailto:info@kertonsgarage.ie" className="text-secondary-200 hover:text-white transition-colors">
-                  info@kertonsgarage.ie
+                <a href="mailto:kertonsgarage@gmail.com" className="text-secondary-200 hover:text-white transition-colors">
+                  kertonsgarage@gmail.com
                 </a>
               </div>
             </div>
@@ -43,7 +43,7 @@ export default function Footer() {
                 <Clock className="w-5 h-5 text-primary-400 flex-shrink-0 mt-1" />
                 <div className="text-secondary-200">
                   <p><span className="font-medium text-white">Mon - Fri:</span> 8:30 AM - 6:00 PM</p>
-                  <p><span className="font-medium text-white">Saturday:</span> 9:00 AM - 4:00 PM</p>
+                  <p><span className="font-medium text-white">Saturday:</span> 9:00 AM - 3:00 PM</p>
                   <p><span className="font-medium text-white">Sunday:</span> Closed</p>
                 </div>
               </div>
