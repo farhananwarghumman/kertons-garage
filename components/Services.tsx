@@ -10,6 +10,7 @@ import {
   Car,
   CircleSlash,
   Zap,
+  Search,
   CheckCircle
 } from 'lucide-react';
 
@@ -21,16 +22,16 @@ const services = [
     features: ['Diagnostics', 'Engine servicing', 'Overhauls']
   },
   {
-    icon: CircleSlash,
-    title: 'Brake Service',
-    description: 'Professional brake inspection, repair, and replacement services.',
-    features: ['Brake pads', 'Brake discs', 'Fluid flush']
+    icon: Car,
+    title: 'Maintenance',
+    description: 'Routine maintenance to keep your vehicle running reliably and efficiently.',
+    features: ['Oil & filter changes', 'Brake & suspension work', 'Cooling & fluids']
   },
   {
-    icon: Droplet,
-    title: 'Oil Change',
-    description: 'Fast and affordable oil change service with premium quality oil.',
-    features: ['Synthetic oil', 'Filter change', 'Inspection']
+    icon: CircleSlash,
+    title: 'NCT Fail Repairs',
+    description: 'We tackle all NCT fails — rust, brakes, suspension, electrical and more.',
+    features: ['Rust repair', 'Brake & suspension work', 'Electrical & wiring']
   },
   {
     icon: Battery,
@@ -45,16 +46,16 @@ const services = [
     features: ['Recharge', 'Leak repair', 'Compressor']
   },
   {
+    icon: Search,
+    title: 'Diagnostics',
+    description: 'Complete diagnostics for electrical, battery, software and wiring issues.',
+    features: ['Electrical scans', 'Battery checks', 'Software & wiring']
+  },
+  {
     icon: Gauge,
     title: 'Transmission',
     description: 'Expert transmission service and repair for smooth shifting.',
     features: ['Fluid service', 'Repairs', 'Rebuilds']
-  },
-  {
-    icon: Car,
-    title: 'Suspension',
-    description: 'Suspension and steering system inspection and repair.',
-    features: ['Shocks', 'Struts', 'Alignment']
   },
   {
     icon: Zap,
