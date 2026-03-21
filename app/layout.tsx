@@ -83,7 +83,7 @@ export default function RootLayout({
     url: "https://kertonsgarage.com",
     image: "https://kertonsgarage.com/kertons-logo.png",
     logo: "https://kertonsgarage.com/kertons-logo.png",
-    telephone: "+353876413038",
+    telephone: "+353 87 641 3038",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Abbey Farm, Inishlounaght",
@@ -121,14 +121,19 @@ export default function RootLayout({
 
   return (
     <html lang="en">
+
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(localBusinessSchema),
-          }}
-        />
-      </head>
+    <meta
+    name="google-site-verification"
+    content="-h0FdtmZhWePTxdPUqkOfEKBDRSmHjVe6eILmNKijL8"
+    />
+    <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(localBusinessSchema),
+    }}
+    />
+    </head>
       <body>{children}</body>
     </html>
   );
