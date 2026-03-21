@@ -34,7 +34,7 @@ export default function Hero() {
             className="text-5xl md:text-6xl lg:text-7xl font-bold text-secondary-900 mb-6"
           >
             Expert Auto Repair
-            <span className="block text-primary-600">You Can Trust</span>
+            <span className="block text-primary-600">Trusted Mechanic in Clonmel</span>
           </motion.h1>
 
           {/* Subtitle */}

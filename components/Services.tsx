@@ -30,8 +30,8 @@ const services = [
   {
     icon: CircleSlash,
     title: 'NCT Fail Repairs',
-    description: 'We tackle all NCT fails — rust, brakes, suspension, electrical and more.',
-    features: ['Rust repair', 'Brake & suspension work', 'Electrical & wiring']
+    description: 'NCT fails — rust or no rust, we tackle it all. Expert repairs for any NCT failure.',
+    features: ['Rust repair', 'All brake & suspension work', 'All electrical issues']
   },
   {
     icon: Battery,
