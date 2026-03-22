@@ -61,6 +61,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
+    shortcut: "/kertons-logo.png",
+    apple: "/kertons-logo.png",
   },
 };
 
